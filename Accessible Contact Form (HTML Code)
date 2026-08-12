@@ -1,0 +1,31 @@
+<form action="#" method="post" aria-describedby="form-instructions">
+  <p id="form-instructions">Please fill out all required fields below.</p>
+
+  <fieldset>
+    <legend>Contact Information</legend>
+
+    <div>
+      <label for="full-name">Full Name (required):</label>
+      <input type="text" id="full-name" name="full-name" required aria-required="true" />
+    </div>
+
+    <div>
+      <label for="email">Email Address (required):</label>
+      <input type="email" id="email" name="email" required aria-required="true" aria-invalid="false" />
+      <span id="email-error" class="error-message" role="alert" style="display: none;">
+        Please enter a valid email address.
+      </span>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Your Message</legend>
+
+    <div>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+    </div>
+  </fieldset>
+
+  <button type="submit">Send Message</button>
+</form>
