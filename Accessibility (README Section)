@@ -1,0 +1,5 @@
+## Accessibility Fixes
+
+* **Fixed Missing Alt Text:** Added descriptive `alt` attributes to all images across all three pages to ensure screen readers can convey visual content to users with vision impairments.
+* **Fixed Form Labels:** Explicitly associated all `<label>` elements with their respective form controls using matching `for` and `id` attributes.
+* **Fixed WCAG Contrast:** Updated button and body text colors to maintain a contrast ratio greater than 4.5:1 against the background, passing WCAG AA standards.
