@@ -1,0 +1,11 @@
+// Requirement 1: Accessible Mobile Navigation Toggle
+const menuToggle = document.querySelector('#menu-toggle');
+const primaryNav = document.querySelector('#primary-nav');
+
+if (menuToggle && primaryNav) {
+  menuToggle.addEventListener('click', () => {
+    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', !isExpanded);
+    primaryNav.classList.toggle('hidden');
+  });
+}
