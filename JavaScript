@@ -9,4 +9,3 @@ if (menuToggle && primaryNav) {
     primaryNav.classList.toggle('hidden');
   });
 }
-hh
